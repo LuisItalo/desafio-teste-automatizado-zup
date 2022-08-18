@@ -64,19 +64,19 @@ public class steps {
 
     }
 
-    @After(order = 1)
-    public void screeshot(Scenario cenario) {
-        File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        try {
-            FileUtils.copyFile(file, new File("target/screenshots/"+cenario.getId()+".jpg"));
-        } catch (IOException e){
-            e.printStackTrace();
-        }
-    }
-
-    @After(order = 0)
-    public void fecharBrowser(){
-        driver.quit();
-    }
+//    @After(order = 1)
+//    public void screeshot(Scenario cenario) {
+//        File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+//        try {
+//            FileUtils.copyFile(file, new File("target/screenshots/"+cenario.getId()+".jpg"));
+//        } catch (IOException e){
+//            e.printStackTrace();
+//        }
+//    }
+//
+//    @After(order = 0)
+//    public void fecharBrowser(){
+//        driver.quit();
+//    }
 
 }
