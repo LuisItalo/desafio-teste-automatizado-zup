@@ -1,6 +1,6 @@
 # Desafio-Zup-Automation
 
-- Neste projeto é testado algumas funcionalidades so site Amazon
+- Neste projeto é testado algumas funcionalidades do site Amazon
 
 ## Plano de testes
 
