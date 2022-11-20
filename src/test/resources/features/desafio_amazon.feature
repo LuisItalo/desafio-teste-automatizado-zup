@@ -4,15 +4,13 @@
     Desejo fazer pesquisa de produto
     Confirmar pesquisa
 
+
     Cenario: Deve pesquisar por nome com acento
       Dado que estou no site a Amazon
       Quando digitar "panela de pressão"
-      Entao retorna lista de produtos com acento
+      Entao retorna lista de produtos
 
-    Cenario: Deve pesquisar por nome sem acento
-      Dado que estou no site a Amazon
-      Quando digitar "panela de pressao"
-      Entao retorna lista de produtos sem acento
+
 
 #  Funcionalidade: Acessar site
 #    Como cliente
