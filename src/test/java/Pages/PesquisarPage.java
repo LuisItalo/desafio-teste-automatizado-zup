@@ -16,8 +16,16 @@ public class PesquisarPage extends Drivers {
         metodos.clicar(el.pesquisar);
     }
 
-    public String verificarComAcento(){
-        return driver.findElement(By.xpath("//*[@id=\"search\"]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/span/div/div/span")).getText();
+    public String verificarProduto(){
+        return driver.findElement(By.cssSelector("span[class='a-size-medium-plus a-color-base a-text-normal']")).getText();
+    }
+
+    public void escolherPanela() {
+        metodos.clicarPanela(el.panela);
+    }
+
+    public void addPanela(){
+        metodos.addCarrinho(el.adicionarCarrinho);
     }
 
     public void fecharBrowser(){

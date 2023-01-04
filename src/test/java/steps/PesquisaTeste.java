@@ -8,6 +8,7 @@ import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import runners.Runner;
 
 import java.io.File;
@@ -32,11 +33,18 @@ public class PesquisaTeste{
 
     @Entao("^retorna lista de produtos$")
     public void retorna_lista_de_produtos() throws Throwable {
-        String texto =  pesqPage.verificarComAcento();
+        String texto =  pesqPage.verificarProduto();
         Assert.assertEquals("RESULTADOS", texto);
-        metodos.screeshot("panela");
-        pesqPage.fecharBrowser();
+        metodos.evidencia("Panela");
+//        pesqPage.fecharBrowser();
+    }
 
+    @Entao("^adiciona no carrinho$")
+    public void adicionaNoCarrinho() throws Throwable {
+        pesqPage.escolherPanela();
+        pesqPage.addPanela();
+        metodos.evidencia("Produto Carrinho");
+        pesqPage.fecharBrowser();
     }
 
 }
