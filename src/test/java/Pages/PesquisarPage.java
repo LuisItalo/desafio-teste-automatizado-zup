@@ -17,7 +17,7 @@ public class PesquisarPage extends Drivers {
     }
 
     public String verificarProduto(){
-        return driver.findElement(By.cssSelector("span[class='a-size-medium-plus a-color-base a-text-normal']")).getText();
+        return driver.findElement(By.cssSelector("span[class=\"a-size-medium-plus a-color-base a-text-bold\"]")).getText();
     }
 
     public void escolherPanela() {

@@ -34,7 +34,7 @@ public class PesquisaTeste{
     @Entao("^retorna lista de produtos$")
     public void retorna_lista_de_produtos() throws Throwable {
         String texto =  pesqPage.verificarProduto();
-        Assert.assertEquals("RESULTADOS", texto);
+        Assert.assertEquals("Resultados", texto);
         metodos.evidencia("Panela");
 //        pesqPage.fecharBrowser();
     }

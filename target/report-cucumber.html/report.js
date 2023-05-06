@@ -44,7 +44,7 @@ formatter.match({
   "location": "PesquisaTeste.que_estou_no_site_a_Amazon()"
 });
 formatter.result({
-  "duration": 14886966252,
+  "duration": 17970255859,
   "status": "passed"
 });
 formatter.match({
@@ -57,21 +57,21 @@ formatter.match({
   "location": "PesquisaTeste.digitar(String)"
 });
 formatter.result({
-  "duration": 3320869978,
+  "duration": 2432186955,
   "status": "passed"
 });
 formatter.match({
   "location": "PesquisaTeste.retorna_lista_de_produtos()"
 });
 formatter.result({
-  "duration": 3751031090,
+  "duration": 3803099100,
   "status": "passed"
 });
 formatter.match({
   "location": "PesquisaTeste.adicionaNoCarrinho()"
 });
 formatter.result({
-  "duration": 10247757426,
+  "duration": 13235456143,
   "status": "passed"
 });
 });
